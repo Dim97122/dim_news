@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import NewsList from 'components/NewsList';
+
 import getHeadlinesNews from 'services/newsAPI';
 
 import 'styles/App.css';
@@ -26,7 +28,7 @@ const App = () => {
   } else {
     return (
       <>
-        yo
+        <NewsList articles={headlinesNews} />
       </>
     );
   }
