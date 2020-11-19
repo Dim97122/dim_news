@@ -4,7 +4,7 @@ import NewsList from 'components/NewsList';
 
 import getHeadlinesNews from 'services/newsAPI';
 
-import 'styles/App.css';
+import 'styles/App.scss';
 
 const App = () => {
   const [headlinesNews, setHeadlinesNews] = useState(null);
