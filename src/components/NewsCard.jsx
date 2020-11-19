@@ -40,7 +40,12 @@ const NewsCard = ({ article }) => {
         </div>
       </div>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        size="lg"
+        centered
+        >
           <Modal.Header closeButton>
             <Modal.Title>{article.title}</Modal.Title>
           </Modal.Header>
