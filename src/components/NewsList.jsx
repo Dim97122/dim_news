@@ -15,7 +15,7 @@ const NewsList = ({ articles }) => {
   }, []);
 
   return (
-    <div>
+    <div className="d-flex p-3">
       {displayedArticles}
     </div>
   );
