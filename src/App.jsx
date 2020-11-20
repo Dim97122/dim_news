@@ -12,7 +12,7 @@ const App = () => {
   const loadHeadlines = () => {
     getHeadlinesNews()
     .then((response) => response.json())
-    .then((result) => {setHeadlinesNews(result.articles)});git diff 
+    .then((result) => {setHeadlinesNews(result.articles)});
   }
 
   useEffect(() => {
