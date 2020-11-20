@@ -7,12 +7,10 @@ const NewsList = ({ articles }) => {
   const articlesNumber = 4;
 
   const selectedArticles = () => {
-    setdisplayedArticles(articles.slice(0, articlesNumber).map(article => <NewsCard key={article.title} article={article}/>))
+    if (articles !== undefined) {
+      setdisplayedArticles(articles.slice(0, articlesNumber).map(article => <NewsCard key={article.title} article={article}/>))
+    }
   }
-
-  useEffect(() => {
-    selectedArticles();
-  }, []);
 
   return (
     <div className="d-flex p-3">
