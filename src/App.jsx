@@ -21,15 +21,16 @@ const App = () => {
 
   if (headlinesNews === null) {
     return (
-      <>
+      <div className="App">
         Pas de News pour l'instant
-      </>
+      </div>
     );
   } else {
     return (
-      <>
+      <div className="App">
+        <h1>DimNews</h1>
         <NewsList articles={headlinesNews} />
-      </>
+      </div>
     );
   }
 }

@@ -3,8 +3,17 @@
 
 .App {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: $grey;
+
+  h1 {
+    color: $primary;
+    font-size: 5em;
+    font-weight: bold;
+  }
 }
 
 .App-logo {
