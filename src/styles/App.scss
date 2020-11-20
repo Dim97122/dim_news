@@ -2,7 +2,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 .App {
+  height: 100vh;
   text-align: center;
+  background-color: $grey;
 }
 
 .App-logo {
