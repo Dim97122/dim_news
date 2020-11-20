@@ -22,7 +22,7 @@ const App = () => {
   if (headlinesNews === null) {
     return (
       <div className="App">
-        Pas de News pour l'instant
+        <h1>Pas de News pour l'instant</h1>
       </div>
     );
   } else {
