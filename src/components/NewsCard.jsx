@@ -41,11 +41,7 @@ const NewsCard = ({ article }) => {
       </div>
 
       <Modal
-        show={show}
-        onHide={handleClose}
-        size="lg"
-        centered
-        >
+        show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>{article.title}</Modal.Title>
           </Modal.Header>
@@ -56,9 +52,8 @@ const NewsCard = ({ article }) => {
                 <a href={article.url} className="mt-2">
                   <button className="btn btn-secondary text-white">Voir le site</button>
                 </a>
-                <button className="btn btn-outline-primary" onClick>Fermer</button>
+                <button className="btn btn-primary text-white" onClick={handleClose}>Fermer</button>
               </div>
-
             </div>
           </Modal.Body>
         </Modal>
