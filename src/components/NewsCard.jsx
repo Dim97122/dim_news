@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 
 import Modal from 'react-bootstrap/Modal';
 
-const NewsCard = ({ article }) => {
+const NewsCard = ({ article, clickHandler }) => {
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    clickHandler();
+    setShow(false);
+  };
   const handleShow = () => setShow(true);
 
   const setupAuthor = (author) => {

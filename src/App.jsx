@@ -29,7 +29,7 @@ const App = () => {
     return (
       <div className="App">
         <h1>DimNews</h1>
-        <NewsList articles={headlinesNews} />
+        <NewsList articles={headlinesNews} clickHandler={loadHeadlines} />
       </div>
     );
   }
